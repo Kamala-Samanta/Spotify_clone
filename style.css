@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    background-color: black; 
+    color: white; 
+    /* overflow-x: hidden; */
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    width: 100vw;
+    height: 64px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 13px ;
+}
+
+.nav-2nd {
+    display: flex;
+}
+
+#home-btn {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    margin-right: 10px;
+}
+
+.search-box {
+    width: 440px;
+    padding: 12px 12px;
+    height: 45px;
+    background-color: rgb(31, 31, 31);
+    border-radius: 20px;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 10px;
+    align-items: center;
+    position: relative;
+    border: 2px solid white;
+}
+
+.search {
+    width: 338px;
+    background-color: transparent;
+    height: 25px;
+    color: white;
+    border: none;
+    font-size: 16px;
+
+
+
+
+}
+
+.nav-btn {
+    color: rgb(179, 179, 179);
+    font-size: 25px;
+}
+
+::placeholder {
+    flex: 4;
+    /* background-color: red; */
+    color: rgb(179, 179, 179);
+    font-size: 16px;
+    height: 30px;
+
+
+}
+
+.browse-btn {
+    height: 25px;
+    padding-left: 10px;
+    border-left: 2px solid rgb(179, 179, 179);
+    /* outline-style: 2px solid red; */
+
+}
+
+.in-btn {
+    gap: 3px;
+    display: flex;
+
+}
+
+.in-btn button {
+    border-radius: 30px;
+    background-color: transparent;
+    color: rgb(179, 179, 179);
+    border: none;
+    width: 100px;
+    padding: 16px 12px;
+    font-weight: 800;
+    font-size: 14px;
+
+}
+
+#log-in {
+    color: black;
+    background-color: white;
+}
+
+/* ***************************preview on spotify design************************** */
+/* .premium {
+    
+    font-size: 14px;
+    font-weight: 500;
+    width: 100vw;
+    height: 65px;
+    background-color: red;
+    display:flex;
+    
+    padding:13px;
+    justify-content: space-between;
+    
+    align-items: center;
+    background: linear-gradient(to right,rgb(215, 57, 215),rgb(167, 49, 252), rgb(106, 196, 252));
+    position: absolute;
+    bottom:0;
+}
+
+.premium span{
+    font-weight: 700;
+}
+
+.sign-up-free{
+    background-color: white;
+    border:none;
+    border-radius: 30px;
+    width: 150px;
+    padding: 13px 10px;
+
+} */
+
+
+
+
+
+/* container */
+
+.container{
+    display: flex;
+    margin:10px;
+    height:calc(100% - 130px);
+    /* overflow:hidden; */
+
+}
+.left{
+    width: 20vw;
+    /* height: 80vh; */
+    padding: 14px;
+    margin-right: 10px;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.right{
+    max-height: 80vh;
+    overflow-y: scroll;
+    width: 80vw;
+    background-color: #292929;
+    padding: 14px;
+    border-radius: 10px;
+   
+}
+
+.card-container1{
+    /* text-align: center; */
+    margin-bottom: 20px;
+}
+.cardContainer{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* justify-content: center; */
+    align-items: center;
+    overflow-x: hidden;
+     
+}
+
+.card-container1 h2{
+    margin: 0px 10px 5px 10px;
+}
+
+.card{
+    padding: 10px;
+    height: 240px;
+    width: 180px;
+    /* background-color: aqua; */
+    border-radius: 8px;
+    padding-bottom: 24px;
+    position:relative;
+    
+    /* border: 2px solid white; */
+}
+
+.card img{
+    width: 100%;
+    height: 73%;
+    object-fit:cover;
+    border-radius: 10px;
+    /* position:relative; */
+}
+
+
+
+
+
+
+
+.popular-artists img{
+    border-radius: 50%;
+}
+.card p{
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+
+#title{
+    font-weight: 600;
+    font-size: 17px;
+}
+.card:hover{
+    background: linear-gradient(#292929 , #7c7c7c84);
+}
+
+.card-container1{
+    margin-bottom: 20px;
+}
+.cardContainer{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    overflow-x: hidden;
+     
+}
+
+.card-container1 h2{
+    margin: 0px 10px 5px 10px;
+}
+
+.card{
+    padding: 10px;
+    height: 240px;
+    width: 180px;
+    /* background-color: aqua; */
+    border-radius: 8px;
+    padding-bottom: 24px;
+    
+}
+
+.card img{
+    width: 100%;
+    height: 73%;
+    object-fit:cover;
+    border-radius: 10px;
+    position:relative;
+}
+
+.card img::after{
+    content:"dfdsd";
+    color:white;
+    width:125px;
+    height:125px;
+    position:absolute;
+    background-color: green;
+    bottom:0;
+    right:10;
+}
+
+.popular-artists img{
+    border-radius: 50%;
+}
+.card p{
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+
+#title{
+    font-weight: 600;
+    font-size: 17px;
+}
+.card:hover{
+    background: linear-gradient(#292929 , #7c7c7c84);
+}
+
+.left{
+    position: relative;
+    background-color: #1f1f1f;
+}
+.left-nav{
+    width:100%;
+    height: 75px;
+    background-color: #1f1f1f;
+    padding:12px 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.left-nav button img{
+    width: 27px;
+    margin-right:10px;
+
+}
+.left-nav button{
+    
+    height: 100%;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    background-color: transparent ;
+    border: none;
+}
+#your-library{
+    color:#b3b3b3;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+.left-nav::after{
+    content: '+';
+    font-size: 2rem;
+    font-weight: 300;
+    position: absolute;
+    right: 22px;
+    color:#b3b3b3;
+   
+}
+
+.left-box-container{
+    height: 45%;
+    overflow-y: scroll;
+}
+
+.box{
+    padding:16px 20px;
+    margin: 8px 0px 30px;
+    background-color: #292929;
+    border-radius: 10px;
+   
+}
+
+.box p{
+    font-size: 14px;
+    margin: 12px 0px 17px 0px;
+    font-weight: 500;
+}
+
+.box button{
+    height: 32px;
+    padding: 4px 16px;
+    border-radius: 20px;
+    border:none;
+    font-weight: 700;
+    font-size: 13px;
+}
+.left-footer{
+   
+    padding: 34px 10px;
+}
+.left-footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    /* text-align: center; */
+    gap:15px;
+    margin-bottom: 20px;
+
+}
+
+.left-footer li{
+    list-style: none;
+    margin: 0px 16px 0px 0px;
+    font-size: 11px;
+    color:#b3b3b3;
+    font-weight: 500;
+    
+}
+
+.language-btn{
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 8px 14px;
+    color:white;
+    border-radius: 20px;
+    font-weight: 700;
+    margin-left: 10px;
+    text-align: center;
+}
+.language-btn i{
+    margin-right: 5px;
+}
+
+.left-footer span{
+    /* margin-top:30px ; */
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.playbar{
+    font-size: 14px;
+    font-weight: 500;
+    width: 100vw;
+    
+    height: 65px;
+   
+    /* display:flex;
+    flex-direction: column; */
+    
+    padding:13px;
+   
+ 
+    background-color: #881717;
+   
+    position: absolute;
+    bottom:0;
+}
+
+.playbar-btn-divs{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.playbar-btn-divs i{
+    font-size: 16px;
+}
+
+#playsong-btn{
+    font-size: 28px;
+}
+
+/* #progress{
+    -webkit-appearance: none;
+    back
+} */
+
+.seekbar{
+    height: 4px;
+    width: 40%;
+    background: aqua;
+    border-radius: 10px;
+    /* position: absolute; */
+    /* bottom: 8px; */
+    margin: 6px;
+    cursor: pointer;
+    margin: 6px auto;
+}
+
+.circle{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    bottom: 4px;
+    left: 0%;
+    /* transition: left 0.5s; */
+}
+
+
+

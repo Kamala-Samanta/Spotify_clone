@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+        
+        .green-play{
+            position: absolute;
+            content:"dfdsd";
+            color:black;
+            text-align: center;
+            z-index: 1;
+            /* width:125px;
+            height:125px; */
+            /* width:44px; */
+            font-size: 19px;
+            border-radius: 50%;
+            padding: 10px 14px;
+            position:absolute;
+            background-color: #1ed760;
+            top: 168px;
+            right:17px;
+            opacity: 0;
+            animation-name: animateplay;
+            /* transition: all 1s ease-out; */
+            animation-duration: .4s;
+     
+            
+        }
+
+        
+
+        @keyframes animateplay {
+            from{
+                top: 168px;
+                opacity:0;
+            }
+            to{
+                top:110px;
+                opacity:1;
+            }
+        }
+
+     
+        
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img class="invert m1" src="logo.svg">
+        <div class="nav-2nd">
+            <button id="home-btn"><i class="fa-solid fa-house" alt="home"></i></button>
+
+            <form class="search-box">
+                <div class="search-btn nav-btn">
+                    <i class="fa-solid fa-magnifying-glass" alt="search"></i>
+                </div>
+                <input type="text" class="search" placeholder="What do you want to play? ">
+                <img class="invert browse-btn " src="browse.svg">
+
+            </form>
+        </div>
+
+
+        <div class="in-btn">
+            <button id="sign-up">Sign up</button>
+            <button id="log-in">Log in</button>
+        </div>
+
+
+    </nav>
+
+    <!-- container -->
+    <div class="container">
+        <div class="left">
+            <div class="left-nav">
+                <button id="your-library"><img src="library.svg">Your Library</button>
+            </div>
+            <div class="left-box-container">
+                <div class="box">
+                    <h4>Create your first playlist</h4>
+                    <p>It's easy we'll help you</p>
+                    <button id="create-playlist">Create Playlist</button>
+                </div>
+                <div class="box">
+                    <h4>Let's find some podcasts to follow</h4>
+                    <p>We'll keep you updated on new episodes</p>
+                    <button id="create-playlist">Browse podcasts</button>
+                </div>
+            </div>
+            <div class="left-footer">
+                <ul>
+                    <li>Legal</li>
+                    <li>Safety & Privacy Center</li>
+                    <li>Privacy Policy</li>
+                    <li>Cookies</li>
+                    <li>About Ads</li>
+                    <li>Accessibility</li>
+                </ul>
+                <span>Cookies</span>
+                
+            </div>
+            <button class="language-btn"><i class="fa-solid fa-globe"></i>English</button>
+        </div>
+
+
+        <div class="right">
+            <div class="popular-artists card-container1">
+                <h2>Popular artists</h2>
+                <div class="cardContainer">
+                    <div class="card">
+                        <div class="green-play"><i class="fa-solid fa-play"></i></div>
+                        <img src="https://i.scdn.co/image/ab6761610000e5eb5ba2d75eb08a2d672f9b69b7" alt="photo">
+                        <p id="title">Arjit Singh</p>
+                        <p>Artist</p>
+                    </div>
+    
+                    <div class="card">
+                        <div class="green-play"><i class="fa-solid fa-play"></i></div>
+                        <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72cf15b8339fecb65f9b050e3b3" alt="photo">
+                        <p id="title">Arjit Singh</p>
+                        <p>Artist</p>
+                    </div>
+                   
+                    <div class="card">
+                        <div class="green-play"><i class="fa-solid fa-play"></i></div>
+                        <img src="https://i.scdn.co/image/ab6775700000ee853c11e8fb5cdf69f50ca036d3" alt="photo">
+                        <p id="title">Arjit Singh</p>
+                        <p>Artist</p>
+                    </div>
+                   
+                    <div class="card">
+                        <div class="green-play"><i class="fa-solid fa-play"></i></div>
+                        <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da847673ddee59e0f3d52c5a76bf" alt="photo">
+                        <p id="title">Arjit Singh</p>
+                        <p>Artist</p>
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div class="popular-albums card-container1">
+                <h2>Popular albums and singles</h2>
+                <div class="cardContainer">
+                    <div class="card">
+                        <div class="green-play"><i class="fa-solid fa-play"></i></div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB8MQ-2tAxCoN9MphRxI4hHJc47ZVRinQp4w&s" alt="photo">
+                        <p id="title">Arjit Singh</p>
+                        <p>Artist</p>
+                    </div>
+    
+                    <div class="card">
+                        <div class="green-play"><i class="fa-solid fa-play"></i></div>
+                        <img src="https://i.scdn.co/image/ab67616d0000b273707ea5b8023ac77d31756ed4" alt="photo">
+                        <p id="title">Arjit Singh</p>
+                        <p>Artist</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="green-play"><i class="fa-solid fa-play"></i></div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e02897f73256b9128a9d70eaf66" alt="photo">
+                        <p id="title">Arjit Singh</p>
+                        <p>Artist</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="green-play"><i class="fa-solid fa-play"></i></div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e0235d2e0ed94a934f2cc46fa49" alt="photo">
+                        <p id="title">Arjit Singh</p>
+                        <p>Artist</p>
+                    </div>
+                   
+                </div>
+
+
+            </div>
+
+           
+            <audio controls id="song">
+                <source src="Creme Brulee - The Soundlings.mp3" type="audio/mpeg">
+                
+            </audio>
+        </div>
+             
+    </div>
+
+    <div class="playbar">
+
+        <div class="playbar-btn-divs">
+            <i class="fa-solid fa-shuffle"></i>
+            <i class="fa-solid fa-backward-step"></i>
+            <i onclick="PlayPause()" id="playsong-btn" class="fa-solid fa-circle-play"></i>
+            <i class="fa-solid fa-forward-step"></i>
+            <i class="fa-solid fa-repeat"></i>
+        </div>
+
+        <input type="range" value="0" id="progress">
+        <!-- <div class="seekbar">
+            <div class="circle"></div>
+        </div> -->
+        
+    </div>
+        <!--*********************************************** premium -->
+        <!-- <div class="premium">
+            <div class="p-content">
+                <span>Preview of Spotify</span>
+            <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+            </div>
+            <button class="sign-up-free"><b>Sign up free</b></button>
+        </div>
+ -->
+
+
+        <script src="script.js"></script>
+        <script>
+            let progress = document.getElementById("progress");
+            let song = document.getElementById("song");
+            let ctrlIcon = document.getElementById("playsong-btn");
+
+            song.onloadedmetadata = function(){
+                progress.max = song.duration;
+                progress.value = song.currentTime;
+            }
+
+            function PlayPause(){
+                if(ctrlIcon.classList.contains("fa-pause")){
+                    song.pause();
+                    ctrlIcon.classList.remove("fa-pause");
+                    ctrlIcon.classList.add("fa-play");
+                }
+                else{
+                    song.play();
+                    ctrlIcon.classList.add("fa-pause");
+                    ctrlIcon.classList.remove("fa-play");
+                }
+            }
+
+            if (song.play()){
+                setInterval(()=>{
+                    progress.value = song.currentTime;
+                },500);
+            }
+
+            progress.onchange =function(){
+                song.play();
+                song.currentTime = progress.value;
+                ctrlIcon.classList.add("fa-pause");
+                ctrlIcon.classList.remove("fa-play");
+            }
+        </script>
+</body>
+
+</html>
